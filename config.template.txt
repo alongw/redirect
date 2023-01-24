@@ -4,4 +4,5 @@ port 3001
 /aaa/bbb/ccc/ddd/eee https://alongw.cn
 / https://www.baidu.com
 
+// 使用 // 注释，目前仅支持在开头注释整行
 // this is a comment

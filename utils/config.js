@@ -2,7 +2,7 @@ import { readFileSync } from 'fs'
 
 const text = readFileSync('config.txt', 'utf-8')
 
-const config = text.replace(/\r|\n/g, '\r').split('\r').filter(e => e != '').map(e => e.split(' '))
+const config = text.replace(/\r|\n/g, '\r').split('\r').filter(e => !(e == '' || e.indexOf('//') == 0)).map(e => e.split(' '))
 
 const systemConfig = {
   port: 3000
