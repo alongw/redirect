@@ -10,4 +10,8 @@ router.forEach(e => {
   })
 })
 
+app.use('/', (req, res) => {
+  res.redirect('/')
+})
+
 app.listen(systemConfig.port)
